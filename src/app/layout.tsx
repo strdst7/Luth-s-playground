@@ -1,7 +1,6 @@
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { LocaleProvider } from "./LocaleProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,13 +22,15 @@ export default async function RootLayout({
 }: {
   children: ReactNode;
 }) {
-  const messages = await getMessages();
+  const msMessages = (await import("../../messages/ms.json")).default;
+  const enMessages = (await import("../../messages/en.json")).default;
+
   return (
     <html lang="ms">
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <LocaleProvider msMessages={msMessages} enMessages={enMessages}>
           {children}
-        </NextIntlClientProvider>
+        </LocaleProvider>
       </body>
     </html>
   );
