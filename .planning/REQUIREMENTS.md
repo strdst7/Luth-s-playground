@@ -97,23 +97,23 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SYNC-01 | — | Pending |
-| PARENT-01 | — | Pending |
-| PARENT-02 | — | Pending |
-| PARENT-03 | — | Pending |
-| PARENT-04 | — | Pending |
-| LOCALE-01 | — | Pending |
-| LOCALE-02 | — | Pending |
-| LOCALE-03 | — | Pending |
-| LOCALE-04 | — | Pending |
-| PRON-01 | — | Pending |
-| AUTH-01 | — | Pending |
-| UI-01 | — | Pending |
+| SYNC-01 | Phase 1 | Pending |
+| PARENT-01 | Phase 2 | Pending |
+| PARENT-02 | Phase 2 | Pending |
+| PARENT-03 | Phase 2 | Pending |
+| PARENT-04 | Phase 2 | Pending |
+| LOCALE-01 | Phase 1 | Pending |
+| LOCALE-02 | Phase 1 | Pending |
+| LOCALE-03 | Phase 1 | Pending |
+| LOCALE-04 | Phase 1 | Pending |
+| PRON-01 | Phase 3 | Pending |
+| AUTH-01 | Phase 3 | Pending |
+| UI-01 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 12 total
-- Mapped to phases: 0
-- Unmapped: 12
+- Mapped to phases: 12
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-07-10*
