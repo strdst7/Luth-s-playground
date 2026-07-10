@@ -14,7 +14,7 @@ Learn through quests, games, APIs, XP, badges, and AI-powered adventures.
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8?style=for-the-badge&logo=tailwindcss)]()
 [![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
-⭐ Star this repository if you like the project!
+[![Powered by PasarAPI](https://img.shields.io/badge/Powered%20By-PasarAPI.xyz-orange?style=for-the-badge)](https://pasarapi.xyz)
 
 </div>
 
@@ -22,41 +22,52 @@ Learn through quests, games, APIs, XP, badges, and AI-powered adventures.
 
 # ✨ What is Luth's Playground?
 
-Luth's Playground is a modern **AI-powered learning platform** that transforms education into an adventure.
+Luth's Playground is an AI-powered learning platform that transforms education into an interactive adventure.
 
-Instead of static lessons, children complete quests, earn XP, unlock achievements, explore APIs, and build curiosity through interactive experiences.
+Children learn through quests, mini games, XP, achievements, AI-assisted activities, and real-world API experiences instead of traditional static lessons.
 
-Designed to make learning feel like playing a game.
+Built with **PasarAPI.xyz**, the platform introduces kids to live APIs in a safe and engaging environment—turning real internet data into educational experiences.
 
+Whether it's discovering random animals, exploring educational content, or interacting with external services, learners experience how modern software connects to the real world while having fun.
 ---
+# ⚡ Powered by PasarAPI.xyz
+
+This project is proudly built with **PasarAPI.xyz**.
+
+PasarAPI provides developer-friendly APIs that make it easy to build interactive educational experiences using live data.
+
+In Luth's Playground, PasarAPI powers features such as:
+
+- 🎲 Random learning activities
+- 🐶 Fun animal discovery
+- 📚 Educational content
+- 🌍 Live API exploration
+- 🧪 API Playground for young developers
+
+By exposing learners to real APIs in a safe environment, children gain an early understanding of how modern applications communicate across the internet.
+
+Learn more:
+
+👉 https://pasarapi.xyz
 
 # 🚀 Features
 
-## 🧠 AI Learning Companion
+## ⚡ API Playground
 
-- Personalized learning journey
-- Adaptive lesson recommendations
-- Smart progress tracking
-- AI-generated challenges
-- AI-assisted exploration
+One of the highlights of Luth's Playground is its **Live API Playground**, powered by **PasarAPI.xyz**.
 
----
+Kids don't just consume content—they interact with real APIs and discover how modern applications work.
 
-## 🎮 RPG Progression
+Current experiences include:
 
-✔ XP System
+- 🎲 Random Dog API
+- 📸 Image APIs
+- 📖 Educational APIs
+- 🎮 Interactive Games
+- 🌍 Live Internet Data
+- 🚀 PasarAPI.xyz Integrations
 
-✔ Levels
-
-✔ Daily Missions
-
-✔ Learning Streaks
-
-✔ Achievements
-
-✔ Badges
-
-✔ Rewards
+Designed to make software engineering concepts accessible through play.
 
 ---
 
