@@ -44,6 +44,7 @@ Recent decisions affecting current work:
 - [Roadmap]: v1 scoped to 12 requirements across 3 phases — security fixes, full sync queue, pronunciation scoring engine deferred to v2
 - [Roadmap]: Phase ordering follows dependency chain — i18n + IndexedDB (Phase 1) before dashboard (Phase 2) and learning tools (Phase 3)
 - [UI-SPEC]: Phase 1 UI design contract approved — 6/6 dimensions passed. Design system: custom Tailwind v4 (no shadcn), 8pt spacing, 4 font sizes/2 weights, 60/30/10 color split, hero heading as primary visual anchor
+- [Context]: Phase 1 context captured — language switcher UX (flag emoji, both child+parent use), IndexedDB migration UX (auto on first load, retry 3x, keep localStorage backup), i18n message organization (flat keys per page/view)
 
 ### Pending Todos
 
@@ -66,5 +67,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-07-10
-Stopped at: Phase 1 UI-SPEC approved
-Resume file: .planning/phase-01-bilingual-foundation/01-UI-SPEC.md
+Stopped at: Phase 1 context gathered
+Resume file: .planning/phase-01-bilingual-foundation/01-CONTEXT.md
