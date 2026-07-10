@@ -30,6 +30,12 @@ This contract governs all visual and interaction decisions for Phase 1: Bilingua
 
 Contract: Continue with pure custom CSS + Tailwind CSS v4 utility classes. No component library.
 
+### Visual Anchor — Home Screen
+
+The Home screen has a single primary focal point: the hero heading **"Ready to build your brain power"** (or Malay equivalent) — rendered at `--text-lg` (clamp(32px, 3.3vw, 48px)), weight 600, centered, with a gold (`--gold` / `#ffd166`) glow/text-shadow accent. This is the largest type element on the page and the first thing a user reads.
+
+Secondary focal points are the five subject cards arranged in the subject grid — each with a subject-colored left-border accent, large icon, and subject name. These are the primary navigation targets after the hero. The daily mission card and stats row (DAY STREAK, TOTAL XP, Level) provide supporting information at `--text-sm` weight 500 and are intentionally subordinate.
+
 ---
 
 ## 2. Design Tokens
@@ -39,6 +45,18 @@ Contract: Continue with pure custom CSS + Tailwind CSS v4 utility classes. No co
 All values locked from existing `globals.css`. Phase 1 adds ONLY:
 - `--accent-ms` — brand color for Malay language indicator (differentiates from English)
 - `--surface-lesson` — darker lesson overlay background (contrast fix)
+
+#### Color Proportion Split (60/30/10)
+
+The dark theme follows a strict proportional split:
+
+| Proportion | Role | Tokens | Elements |
+|------------|------|--------|----------|
+| **60% — Dominant** | Page background | `--void` (`#070915`), `--void-2` (`#0d1230`) | Main app background, gradient terminus |
+| **30% — Secondary** | Surface backgrounds | `--panel-dark` (`rgba(16,24,64,.88)`), `--surface-card` | Cards, panels, sidebar sections, lesson overlay, nav bar |
+| **10% — Accent** | Interactive & highlight | `--neon` (`#48f7ff`), `--neon-pink` (`#ff4fd8`), `--gold` (`#ffd166`), `--neon-green` (`#48ff9b`), `--coral` (`#ff5a79`) | Borders, glow effects, buttons, progress bars, subject colors, rewards, destructive actions |
+
+**Accent is reserved for:** borders on cards/panels, button backgrounds, glow/shadow effects, progress indicators, subject color coding, XP/reward highlights, and active/selected states. Accent does NOT fill large surface areas (kept to <10% of any viewport).
 
 #### Core Colors (Dark Theme — Active)
 
@@ -89,20 +107,17 @@ font-family: "Arial Rounded MT Bold", "Nunito", ui-rounded, system-ui, -apple-sy
 
 | Token | Size | Weight | Line Height | Usage |
 |-------|------|--------|-------------|-------|
-| `--text-xs` | 10px | 800 (extrabold) | 1.3 | Eyebrow labels, badges, stats |
-| `--text-sm` | 14px | 500 (medium) / 600 (semibold) | 1.6 | Body text, descriptions |
-| `--text-base` | 18-24px | 900 (black) / 1000 (extrablack) | 1.1 | Card titles, section headings |
-| `--text-lg` | clamp(32px, 3.3vw, 48px) | 1000 (extrablack) | 1.02 | Hero headings, page titles |
+| `--text-xs` | 10px | 600 | 1.3 | Eyebrow labels, badges, stats |
+| `--text-sm` | 14px | 500 / 600 | 1.6 | Body text (500), descriptions & labels (600) |
+| `--text-base` | 18-24px | 600 | 1.1 | Card titles, section headings |
+| `--text-lg` | clamp(32px, 3.3vw, 48px) | 600 | 1.02 | Hero headings, page titles |
 
-#### Font Weights (Declared — 4 weights)
+#### Font Weights (Declared — 2 weights)
 
 | Weight | CSS Value | Usage |
 |--------|-----------|-------|
-| Medium | 500 | Body copy, descriptions (family falls back to Nunito) |
-| Semibold | 600 | Default body (Arial Rounded MT Bold) |
-| Extrabold | 800 | Eyebrow labels, button text |
-| Black | 900 | Card titles, section headings |
-| Extrablack | 1000 | Hero headings ("Ready to build your brain power") |
+| Medium | 500 | Body copy, descriptions — rendered via Nunito fallback |
+| Semibold | 600 | Headings, labels, buttons, hero text, and all other text — rendered by Arial Rounded MT Bold's single weight (Bold) |
 
 #### Malay Text Considerations
 
@@ -116,7 +131,7 @@ font-family: "Arial Rounded MT Bold", "Nunito", ui-rounded, system-ui, -apple-sy
 |-------|-------|-------|
 | `--space-1` | 4px | Micro spacing, icon gaps |
 | `--space-2` | 8px | Button padding, grid gaps (small) |
-| `--space-3` | 12px | Element gaps, card padding (tight) |
+| `--space-3` | 12px | Element gaps, card padding (tight) — non-standard 8pt value, justified for narrow subject-card inner padding where 16px is too loose and 8px is too tight for the 3D blocky border aesthetic |
 | `--space-4` | 16px | Standard gap, card padding |
 | `--space-5` | 24px | Section padding, modal padding |
 | `--space-6` | 32px | Hero padding, large gaps |
