@@ -22,7 +22,17 @@ A 3-phase v1 delivery to transform the existing MVP into a bilingual, parent-emp
   3. Lesson/quiz content displays in the selected language — questions, answer options, instructions appear in either English or Malay
   4. App stores all progress data (XP, streaks, badges, completed lessons) in IndexedDB via Dexie.js — data persists across page refreshes and browser restarts; existing localStorage data migrates on first load
   5. Quest/activity layout has sufficient contrast — text is readable against backgrounds, buttons are visually distinct, and interactive elements are clearly visible
-**Plans**: TBD
+**Plans**: 5 plans
+
+```
+Plans:
+- [ ] 01-01-PLAN.md — Foundation: Install deps, configure i18n routing/messages, apply CSS contrast fix
+- [ ] 01-02-PLAN.md — Bilingual App UI: LanguageSwitcher + wired i18n across all views
+- [ ] 01-03-PLAN.md — Bilingual Curriculum: Update question/lesson types + add Malay translations
+- [ ] 01-04-PLAN.md — Dexie.js Setup: Database schema, migration UX, enhanced sync-pill
+- [ ] 01-05-PLAN.md — IndexedDB Persistence: UseLiveQuery data access + loading skeletons
+```
+
 **UI hint**: yes
 
 ### Phase 2: Parent Dashboard
@@ -54,6 +64,6 @@ A 3-phase v1 delivery to transform the existing MVP into a bilingual, parent-emp
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Bilingual Foundation | 0/TBD | Not started | - |
+| 1. Bilingual Foundation | 0/5 | Planning | - |
 | 2. Parent Dashboard | 0/TBD | Not started | - |
 | 3. Learning Tools | 0/TBD | Not started | - |
