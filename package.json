@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "dexie": "^4.4.4",
+    "dexie": "^4.4.7",
     "dexie-react-hooks": "^4.4.0",
     "dotenv": "17.3.1",
     "drizzle-orm": "0.45.2",
